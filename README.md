@@ -1,3 +1,6 @@
 ## for Scheme repository
 
-SICP
+this repo is for SICP
+
+I use Racket as Scheme processing system.
+
