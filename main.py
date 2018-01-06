@@ -2,14 +2,15 @@
 main script
 """
 
-from src import mymath
+# from src import mymath
+from src import myabstract
 
 
 def main():
     """
     main function
     """
-    result = mymath.pow(10, 2.5)
+    result = myabstract.sum_cubes(10)
     print(result)
     return 0
 
