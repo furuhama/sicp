@@ -10,7 +10,7 @@ def main():
     """
     main function
     """
-    result = myabstract.sum_cubes(10)
+    result = myabstract.pi_sum(1000000)
     print(result)
     return 0
 

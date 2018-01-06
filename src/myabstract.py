@@ -49,3 +49,24 @@ def sum_naturals(n):
     sum_naturals returns sum of i (i is from 1 to n)
     """
     return summation(n, identity, successor)
+
+
+def pi_term(i):
+    """
+    pi_term returns 8 / (i * (i + 2))
+    """
+    return 8 / (i * (i + 2))
+
+
+def pi_next(i):
+    """
+    pi_next returns i + 4
+    """
+    return i + 4
+
+
+def pi_sum(n):
+    """
+    get pi from summation of fractions
+    """
+    return summation(n, pi_term, pi_next)
