@@ -9,7 +9,7 @@ def main():
     """
     main function
     """
-    result = mymath.add(1, 2)
+    result = mymath.pow(10, 2.5)
     print(result)
     return 0
 
