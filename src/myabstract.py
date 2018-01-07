@@ -23,6 +23,13 @@ def cube(x):
     return x * x * x
 
 
+def square(x):
+    """
+    square returns x^2
+    """
+    return x * x
+
+
 def successor(x):
     """
     successor returns x + 1
