@@ -1,5 +1,42 @@
 """
-myabstract is my functions
+abstract is my functions
+"""
+
+from .__init__ import MyMath
+
+
+"""
+instance methods below
+"""
+
+
+def class_summation(self, n, term, next_index):
+    total, i = 0, 1
+    while i <= n:
+        total, i = total + term(i), next_index(i)
+    self.num = total
+
+
+def class_cube(self, x):
+    return x * x * x
+
+
+def class_successor(self, x):
+    return x + 1
+
+
+def class_sum_cubes(self, n):
+    self.summation(n, self.cube, self.successor)
+
+
+MyMath.summation = class_summation
+MyMath.cube = class_cube
+MyMath.successor = class_successor
+MyMath.sum_cubes = class_sum_cubes
+
+
+"""
+Normal functions below
 """
 
 
