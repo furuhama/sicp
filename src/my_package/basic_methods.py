@@ -26,10 +26,6 @@ def square(self, x):
     self.num = self.mul(x, x)
 
 
-def pow(self, x, n):
-    self.num = x ** n
-
-
 def sum_naturals(self, n):
     total, i = 0, 1
     while i <= n:
