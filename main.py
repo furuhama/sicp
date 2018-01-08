@@ -3,7 +3,6 @@ main script
 """
 
 from src import my_package
-# from src import myimprove
 
 
 def main():
@@ -21,9 +20,9 @@ def main():
     hoge.sum_cubes(12)
     hoge.print_num()
 
-    # result = myimprove.iter_improve(
-    #     myimprove.golden_update, myimprove.golden_test)
-    # print(result)
+    result = my_package.iter_improve(
+        my_package.golden_update, my_package.golden_test)
+    print(result)
     return 0
 
 

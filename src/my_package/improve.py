@@ -2,7 +2,7 @@
 myimprove is my functions
 """
 
-from src import myabstract
+from . import abstract
 
 
 def near(x, f, g):
@@ -41,4 +41,4 @@ def golden_test(guess):
     """
     golden_test returns whether guess^2 & guess+1 is near enough or not
     """
-    return near(guess, myabstract.square, myabstract.successor)
+    return near(guess, abstract.square, abstract.successor)

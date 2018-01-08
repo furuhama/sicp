@@ -6,4 +6,7 @@ my_package is for my basic functions
 from .basic_methods import MyMath
 
 # abstract is more abstract functions
-from . import abstract
+from .abstract import *
+
+# improve is to get almost accurate value by iteration
+from .improve import *
