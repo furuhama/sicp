@@ -11,7 +11,7 @@ def main():
     """
 
     hoge = my_package.MyMath(0)
-
+    # hoge
     hoge.sum_cubes(12)
     hoge.print_num()
 
