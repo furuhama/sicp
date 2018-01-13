@@ -45,8 +45,29 @@ def golden_test(guess):
     return near(guess, lambda x: x * x, lambda x: x + 1)
 
 
+def square_root(x):
+    def average(a, b):
+        return (a + b) / 2
+
+    def square(a):
+        return a * a
+
+    def update(guess):
+        return average(guess, x / guess)
+
+    def test(guess):
+        return approx_eq(square(guess), x)
+
+    return iter_improve(update, test)
+
+
 def set_iter_result(self, update, test, guess=1):
     self.num = iter_improve(update, test, guess)
 
 
+def set_square_root(self, x):
+    self.num = square_root(x)
+
+
 MyMath.iter_improve = set_iter_result
+MyMath.square_root = set_square_root

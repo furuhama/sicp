@@ -15,10 +15,13 @@ def main():
     hoge.sum_cubes(12)
     hoge.print_num()
 
-    hoge.pi_sum(10000)
+    hoge.pi_sum(100000)
     hoge.print_num()
 
     hoge.iter_improve(my_package.golden_update, my_package.golden_test)
+    hoge.print_num()
+
+    hoge.square_root(256)
     hoge.print_num()
 
 
