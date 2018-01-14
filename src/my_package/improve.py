@@ -5,11 +5,11 @@ myimprove is my functions
 from .mymath import MyMath
 
 
-def near(t, f, g):
+def near(x, f, g):
     """
     near returns bool value, whether f(t) & g(t) is near enough or not
     """
-    return approx_eq(f(t), g(t))
+    return approx_eq(f(x), g(x))
 
 
 def approx_eq(x, y, tolerance=1e-5):
