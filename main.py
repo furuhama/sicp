@@ -13,15 +13,21 @@ def main():
     # create MyMath instance named hoge
     hoge = my_package.MyMath()
 
-    # some process written below
-    hoge.sum_cubes(12)
-    hoge.print_num()
+    """
+    some process written below
+    """
 
-    hoge.pi_sum(100000)
-    hoge.print_num()
+    # hoge.sum_cubes(12)
+    # hoge.print_num()
 
-    hoge.iter_improve(my_package.golden_update, my_package.golden_test)
-    hoge.print_num()
+    # hoge.pi_sum(100000)
+    # hoge.print_num()
+
+    # hoge.iter_improve(my_package.golden_update, my_package.golden_test)
+    # hoge.print_num()
+
+    # hoge.square_root(256)
+    # hoge.print_num()
 
     hoge.square_root(256)
     hoge.print_num()
