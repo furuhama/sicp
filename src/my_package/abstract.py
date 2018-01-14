@@ -39,6 +39,17 @@ def successor(self, x):
     return x + 1
 
 
+def compose(f, g):
+    def h(x):
+        return f(g(x))
+    return h
+
+
+def set_composed_value(self, f, g, x):
+    composed_function = compose(f, g)
+    self.num = composed_function(x)
+
+
 def sum_cubes(self, n):
     self.summation(n, self.cube, self.successor)
 
@@ -73,6 +84,7 @@ MyMath.cube = cube
 MyMath.square = square
 MyMath.identity = identity
 MyMath.successor = successor
+MyMath.compose = set_composed_value
 MyMath.sum_cubes = sum_cubes
 MyMath.sum_naturals = sum_naturals
 MyMath.pi_term = pi_term
