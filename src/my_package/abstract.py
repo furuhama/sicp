@@ -40,9 +40,10 @@ def successor(self, x):
 
 
 def compose(f, g):
-    def h(x):
-        return f(g(x))
-    return h
+    # def h(x):
+    #     return f(g(x))
+    # return h
+    return lambda x: f(g(x))
 
 
 def set_composed_value(self, f, g, x):
