@@ -10,8 +10,10 @@ def main():
     main function
     """
 
-    hoge = my_package.MyMath(0)
-    # hoge
+    # create MyMath instance named hoge
+    hoge = my_package.MyMath()
+
+    # some process written below
     hoge.sum_cubes(12)
     hoge.print_num()
 

@@ -8,5 +8,5 @@ class MyMath():
     MyMath is base class
     """
 
-    def __init__(self, num):
+    def __init__(self, num=0):
         self.num = num
