@@ -23,6 +23,11 @@ def sum_even_fibs(n):
     return sum(filter(is_even, map(fib, range(1, n + 1))))
 
 
+"""
+set functions as MyMath class instance method
+"""
+
+
 def set_sum_even_fibs(self, n):
     self.num = sum_even_fibs(n)
 
