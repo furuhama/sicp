@@ -12,3 +12,6 @@ from .abstract import *
 
 # improve is to get almost accurate value by iteration
 from .improve import *
+
+# decorators
+from .decorator import *

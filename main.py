@@ -32,10 +32,13 @@ def main():
     # hoge.compose(hoge.square, hoge.successor, 12)
     # hoge.print_num()
 
-    hoge.fn_square_root(256)
-    hoge.print_num()
+    # hoge.fn_square_root(256)
+    # hoge.print_num()
 
-    hoge.logarithm(32)
+    # hoge.logarithm(32)
+    # hoge.print_num()
+
+    hoge.triple(2376)
     hoge.print_num()
 
 
