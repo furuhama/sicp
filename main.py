@@ -38,7 +38,10 @@ def main():
     # hoge.logarithm(32)
     # hoge.print_num()
 
-    hoge.triple(2376)
+    # hoge.triple(2376)
+    # hoge.print_num()
+
+    hoge.sum_even_fibs(50)
     hoge.print_num()
 
 
