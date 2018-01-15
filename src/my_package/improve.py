@@ -45,6 +45,31 @@ def golden_test(guess):
     return near(guess, lambda x: x * x, lambda x: x + 1)
 
 
+def approx_derivative(f, x, delta=1e-5):
+    df = f(x + delta) - f(x)
+    return df / delta
+
+
+def newton_update(f):
+    def update(x):
+        return x - f(x) / approx_derivative(f, x)
+    return update
+
+
+def find_root(f, initial_guess=10):
+    def test(x):
+        return approx_eq(f(x), 0)
+    return iter_improve(newton_update(f), test, initial_guess)
+
+
+def fn_square_root(a):
+    return find_root(lambda x: (x * x - a))
+
+
+def logarithm(a, base=2):
+    return find_root(lambda x: pow(base, x) - a)
+
+
 def square_root(x):
     def average(a, b):
         return (a + b) / 2
@@ -69,5 +94,15 @@ def set_square_root(self, x):
     self.num = square_root(x)
 
 
+def set_fn_square_root(self, x):
+    self.num = fn_square_root(x)
+
+
+def set_logarithm(self, a, base=2):
+    self.num = logarithm(a, base)
+
+
 MyMath.iter_improve = set_iter_result
 MyMath.square_root = set_square_root
+MyMath.fn_square_root = set_fn_square_root
+MyMath.logarithm = set_logarithm

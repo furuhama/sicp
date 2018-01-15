@@ -29,7 +29,13 @@ def main():
     # hoge.square_root(256)
     # hoge.print_num()
 
-    hoge.compose(hoge.square, hoge.successor, 12)
+    # hoge.compose(hoge.square, hoge.successor, 12)
+    # hoge.print_num()
+
+    hoge.fn_square_root(256)
+    hoge.print_num()
+
+    hoge.logarithm(32)
     hoge.print_num()
 
 
