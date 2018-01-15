@@ -44,6 +44,9 @@ def main():
     hoge.sum_even_fibs(50)
     hoge.print_num()
 
+    hoge.product_even_fibs(30)
+    hoge.print_num()
+
 
 if __name__ == '__main__':
     main()
