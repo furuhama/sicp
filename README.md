@@ -13,4 +13,4 @@ I use Python or Racket as Scheme processing system.
 
 ============== Chapter 1 end ==============
 
-- hoge
+- P88[2.3.6 Strings] (2018/01/15)
