@@ -1,5 +1,5 @@
 """
-myimprove is my functions
+improvement as approximation
 """
 
 from .mymath import MyMath
