@@ -3,7 +3,7 @@ mymath is only for class definition
 """
 
 
-class MyMath():
+class MyMath(object):
     """
     MyMath is base class
     """
