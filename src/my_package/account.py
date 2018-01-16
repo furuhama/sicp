@@ -17,3 +17,7 @@ class Account(object):
             return 'Insufficient funds'
         self.balance -= amount
         return self.balance
+
+    def status(self):
+        print("====== basic info ======\n{}\nholder: {}\nbalance: {}".format(
+            self, self.holder, self.balance))

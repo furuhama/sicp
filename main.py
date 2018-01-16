@@ -62,6 +62,8 @@ def main():
     print(getattr(ac, 'balance'))
     print(hasattr(ac, 'balance'))
 
+    ac.status()
+
 
 if __name__ == '__main__':
     main()
