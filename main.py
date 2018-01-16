@@ -52,6 +52,16 @@ def main():
 
     print(ac.holder)
 
+    ac.deposit(100)
+    print(ac.balance)
+    ac.withdraw(10)
+    print(ac.balance)
+    print(ac.withdraw(150))
+    print(ac.balance)
+
+    print(getattr(ac, 'balance'))
+    print(hasattr(ac, 'balance'))
+
 
 if __name__ == '__main__':
     main()
