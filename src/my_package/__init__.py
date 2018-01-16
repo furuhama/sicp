@@ -22,4 +22,4 @@ from .iterator import *
 """
 Account class
 """
-from .account import Account
+from .account import Account, CheckingAccount

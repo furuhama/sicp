@@ -23,3 +23,11 @@ class Account(object):
     def status(self):
         print("====== basic info ======\n{}\nholder: {}\nbalance: {}".format(
             self, self.holder, self.balance))
+
+
+class CheckingAccount(Account):
+    interest = 0.1
+    charge_rate = 0.1
+
+    def withdraw(self, amount):
+        return Account.withdraw(self, amount * self.charge_rate)

@@ -16,6 +16,9 @@ def main():
     # create Account instance named ac
     ac = my_package.Account("spam")
 
+    # create CheckingAccount instance
+    chac = my_package.CheckingAccount("foo")
+
     """
     some process written below
     """
@@ -65,6 +68,10 @@ def main():
     ac.status()
 
     print(ac.interest)
+
+    chac.deposit(100)
+    chac.withdraw(50)
+    print(chac.balance)
 
 
 if __name__ == '__main__':
