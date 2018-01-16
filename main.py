@@ -11,7 +11,7 @@ def main():
     """
 
     # create MyMath instance named hoge
-    hoge = my_package.MyMath()
+    # hoge = my_package.MyMath()
 
     """
     some process written below
@@ -41,11 +41,14 @@ def main():
     # hoge.triple(2376)
     # hoge.print_num()
 
-    hoge.sum_even_fibs(50)
-    hoge.print_num()
+    # hoge.sum_even_fibs(50)
+    # hoge.print_num()
 
-    hoge.product_even_fibs(30)
-    hoge.print_num()
+    # hoge.product_even_fibs(30)
+    # hoge.print_num()
+
+    fuga = my_package.Account("Spam")
+    print(fuga.holder)
 
 
 if __name__ == '__main__':

@@ -18,3 +18,8 @@ from .decorator import *
 
 # iterators
 from .iterator import *
+
+"""
+Account class
+"""
+from .account import Account
