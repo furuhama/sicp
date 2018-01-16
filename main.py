@@ -13,6 +13,9 @@ def main():
     # create MyMath instance named hoge
     # hoge = my_package.MyMath()
 
+    # create Account instance named ac
+    ac = my_package.Account("spam")
+
     """
     some process written below
     """
@@ -47,8 +50,7 @@ def main():
     # hoge.product_even_fibs(30)
     # hoge.print_num()
 
-    fuga = my_package.Account("Spam")
-    print(fuga.holder)
+    print(ac.holder)
 
 
 if __name__ == '__main__':
