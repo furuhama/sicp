@@ -50,14 +50,14 @@ def main():
     # hoge.product_even_fibs(30)
     # hoge.print_num()
 
-    print(ac.holder)
+    # print(ac.holder)
 
-    ac.deposit(100)
-    print(ac.balance)
-    ac.withdraw(10)
-    print(ac.balance)
-    print(ac.withdraw(150))
-    print(ac.balance)
+    # ac.deposit(100)
+    # print(ac.balance)
+    # ac.withdraw(10)
+    # print(ac.balance)
+    # print(ac.withdraw(150))
+    # print(ac.balance)
 
     print(getattr(ac, 'balance'))
     print(hasattr(ac, 'balance'))
