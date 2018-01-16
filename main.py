@@ -59,10 +59,12 @@ def main():
     # print(ac.withdraw(150))
     # print(ac.balance)
 
-    print(getattr(ac, 'balance'))
-    print(hasattr(ac, 'balance'))
+    # print(getattr(ac, 'balance'))
+    # print(hasattr(ac, 'balance'))
 
     ac.status()
+
+    print(ac.interest)
 
 
 if __name__ == '__main__':
