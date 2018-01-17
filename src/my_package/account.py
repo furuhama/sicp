@@ -27,7 +27,20 @@ class Account(object):
 
 class CheckingAccount(Account):
     interest = 0.1
-    charge_rate = 0.1
+    withdraw_charge = 0.1
 
     def withdraw(self, amount):
-        return Account.withdraw(self, amount * self.charge_rate)
+        return Account.withdraw(self, amount * self.withdraw_charge)
+
+
+class SavingAccount(Account):
+    deposit_charge = 0.1
+
+    def deposit(self, amount):
+        return Account.deposit(self, amount * (1 - self.deposit_charge))
+
+
+class CampaignAccount(CheckingAccount, SavingAccount):
+    def __init__(self, account_holder):
+        self.holder = account_holder
+        self.balance = 1  # From Campaign
