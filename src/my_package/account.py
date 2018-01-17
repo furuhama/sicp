@@ -30,7 +30,7 @@ class CheckingAccount(Account):
     withdraw_charge = 0.1
 
     def withdraw(self, amount):
-        return Account.withdraw(self, amount * self.withdraw_charge)
+        return Account.withdraw(self, amount * (1 + self.withdraw_charge))
 
 
 class SavingAccount(Account):

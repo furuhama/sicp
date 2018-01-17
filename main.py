@@ -19,6 +19,9 @@ def main():
     # create CheckingAccount instance
     chac = my_package.CheckingAccount("foo")
 
+    # create CampaignAccount instance
+    camac = my_package.CampaignAccount("HOGEEEEE")
+
     """
     some process written below
     """
@@ -65,13 +68,19 @@ def main():
     # print(getattr(ac, 'balance'))
     # print(hasattr(ac, 'balance'))
 
-    ac.status()
+    # ac.status()
 
-    print(ac.interest)
+    # print(ac.interest)
 
-    chac.deposit(100)
-    chac.withdraw(50)
-    print(chac.balance)
+    # chac.deposit(100)
+    # chac.withdraw(50)
+    # print(chac.balance)
+
+    print(camac.balance)
+    camac.deposit(20)
+    print(camac.balance)
+    camac.withdraw(10)
+    print(camac.balance)
 
 
 if __name__ == '__main__':
