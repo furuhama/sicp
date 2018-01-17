@@ -16,3 +16,4 @@ I use Python or Racket as Scheme processing system.
 - P88[2.3.6 Strings] (2018/01/15)
 - P92[2.3.7 Conventional Interfaces] (2018/01/15)
 - P124[2.5.6 Using Inheritance] (2018/01/17)
+- P128[2.5.7 Multiple Inheritance] (2018/01/17)
