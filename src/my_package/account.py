@@ -6,6 +6,14 @@ every Account instance has its holder & balance
 class Account(object):
     interest = 0.02  # class attribute
 
+    @classmethod
+    def show_inheritance(cls):
+        print([c.__name__ for c in cls.mro()])
+
+    """
+    instance methods
+    """
+
     def __init__(self, account_holder):
         self.balance = 0
         self.holder = account_holder

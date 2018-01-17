@@ -82,6 +82,8 @@ def main():
     camac.withdraw(10)
     print(camac.balance)
 
+    camac.show_inheritance()
+
 
 if __name__ == '__main__':
     main()
