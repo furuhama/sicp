@@ -14,13 +14,13 @@ def main():
     # hoge = my_package.MyMath()
 
     # create Account instance named ac
-    ac = my_package.Account("spam")
+    # ac = my_package.Account("spam")
 
     # create CheckingAccount instance
-    chac = my_package.CheckingAccount("foo")
+    # chac = my_package.CheckingAccount("foo")
 
     # create CampaignAccount instance
-    camac = my_package.CampaignAccount("HOGEEEEE")
+    # camac = my_package.CampaignAccount("HOGEEEEE")
 
     """
     some process written below
@@ -76,13 +76,13 @@ def main():
     # chac.withdraw(50)
     # print(chac.balance)
 
-    print(camac.balance)
-    camac.deposit(20)
-    print(camac.balance)
-    camac.withdraw(10)
-    print(camac.balance)
+    # print(camac.balance)
+    # camac.deposit(20)
+    # print(camac.balance)
+    # camac.withdraw(10)
+    # print(camac.balance)
 
-    camac.show_inheritance()
+    # camac.show_inheritance()
 
 
 if __name__ == '__main__':
