@@ -2,7 +2,8 @@
 main script
 """
 
-from src import my_package
+# from src import my_package
+from src import my_class
 
 
 def main():
@@ -83,6 +84,24 @@ def main():
     # print(camac.balance)
 
     # camac.show_inheritance()
+
+    """
+    my class modules
+    """
+
+    # make class
+    Account = my_class.make_account_class()
+    # make instance
+    furuhama_account = Account['new']('furuhama')
+
+    # show details
+    print(furuhama_account['get']('holder'))
+    print(furuhama_account['get']('interest'))
+    print(furuhama_account['get']('deposit')(20))
+    print(furuhama_account['get']('withdraw')(5))
+
+    # get unexist variable
+    print(furuhama_account['get']('hoge'))
 
 
 if __name__ == '__main__':
