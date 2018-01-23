@@ -61,3 +61,37 @@ def init_instance(cls, *args):
     if init:
         init(instance, *args)
     return instance
+
+
+"""
+Account class
+"""
+
+
+def make_account_class():
+    """
+    return a Account class,
+    which has deposit & withdraw methods.
+    """
+
+    def __init__(self, account_holder):
+        self['set']('holder', account_holder)
+        self['set']('balance', 0)
+
+    def deposit(self, amount):
+        balance_new = sel['get']('balance') + amount
+        self['set']('balance', balance_new)
+        return self['get']('balance')
+
+    def withdraw(self, amount):
+        balance = self['get']('balance')
+        if amount > balance:
+            return 'Insufficient funds'
+        self['set']('balance', balance - amount)
+        return self['get']('balance')
+
+    return make_class({'__init__': __init__,
+                       'deposit': deposit,
+                       'withdraw': withdraw,
+                       # set class variable like this
+                       'interest': 0.02})
