@@ -95,3 +95,13 @@ def make_account_class():
                        'withdraw': withdraw,
                        # set class variable like this
                        'interest': 0.02})
+
+
+def make_checking_account_class():
+    fee = 1
+    interest = 0.01
+    Account = make_account_class()
+
+    def withdraw(self, amount):
+        return Account['get']('withdraw')(self, amount + fee)
+    return make_class({'withdraw': withdraw, 'interest': interest}, Account)

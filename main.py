@@ -103,6 +103,13 @@ def main():
     # get unexist variable
     print(furuhama_account['get']('hoge'))
 
+    CheckingAccount = my_class.make_checking_account_class()
+    f_account = CheckingAccount['new']('f')
+    print(f_account['get']('holder'))
+    print(f_account['get']('interest'))
+    print(f_account['get']('deposit')(20))
+    print(f_account['get']('withdraw')(5))
+
 
 if __name__ == '__main__':
     main()
