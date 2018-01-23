@@ -79,7 +79,7 @@ def make_account_class():
         self['set']('balance', 0)
 
     def deposit(self, amount):
-        balance_new = sel['get']('balance') + amount
+        balance_new = self['get']('balance') + amount
         self['set']('balance', balance_new)
         return self['get']('balance')
 
