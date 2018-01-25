@@ -111,9 +111,10 @@ def main():
     print(f_account['get']('withdraw')(5))
 
     from math import pi
-    print(my_class.add_complex(my_class.ComplexRI(1, 2), my_class.ComplexMA(2, pi/2)))
-    # this doesn't work well...
+    print(my_class.add_complex(my_class.ComplexRI(
+        1, 2), my_class.ComplexMA(2, pi / 2)))
     print(my_class.mul_complex(my_class.ComplexRI(0, 1), my_class.ComplexRI(0, 1)))
+
 
 if __name__ == '__main__':
     main()

@@ -4,11 +4,14 @@ impl complex
 
 from math import atan2, sin, cos
 
+
 def add_complex(z1, z2):
     return ComplexRI(z1.real + z2.real, z1.imag + z2.imag)
 
+
 def mul_complex(z1, z2):
-    return ComplexMA(z1.magnitude * z2.magnitude, z1.angle * z2.angle)
+    return ComplexMA(z1.magnitude * z2.magnitude, z1.angle + z2.angle)
+
 
 class ComplexRI(object):
     def __init__(self, real, imag):
@@ -25,6 +28,7 @@ class ComplexRI(object):
 
     def __repr__(self):
         return 'ComplexRI({0}, {1})'.format(self.real, self.imag)
+
 
 class ComplexMA(object):
     def __init__(self, magnitude, angle):
