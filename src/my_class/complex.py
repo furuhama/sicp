@@ -26,6 +26,15 @@ def mul_rational(x, y):
     return Rational(x.numer * y.numer, x.denom * y.denom)
 
 
+# functions for each of two class
+def iscomplex(z):
+    return isinstance(z, (ComplexRI, ComplexMA))
+
+
+def isrational(z):
+    return isinstance(z, Rational)
+
+
 class ComplexRI(object):
     def __init__(self, real, imag):
         self.real = real

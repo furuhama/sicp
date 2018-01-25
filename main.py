@@ -119,6 +119,8 @@ def main():
     print(my_class.ComplexRI(1, 2) + my_class.ComplexMA(2, 0))
     print(my_class.ComplexRI(0, 1) * my_class.ComplexRI(0, 1))
 
+    print(my_class.iscomplex(my_class.ComplexMA(1, 1)))
+
 
 if __name__ == '__main__':
     main()
