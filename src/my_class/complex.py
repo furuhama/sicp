@@ -3,14 +3,27 @@ impl complex
 """
 
 from math import atan2, sin, cos
+from fractions import gcd
 
 
+# functions for Complex numbers
 def add_complex(z1, z2):
     return ComplexRI(z1.real + z2.real, z1.imag + z2.imag)
 
 
 def mul_complex(z1, z2):
     return ComplexMA(z1.magnitude * z2.magnitude, z1.angle + z2.angle)
+
+
+# functions for Rational Numbers
+def add_rational(x, y):
+    nx, dx = x.numer, x.denom
+    ny, dy = y.numer, y.denom
+    return Rational(nx * dy + ny * dx, dx * dy)
+
+
+def mul_rational(x, y):
+    return Rational(x.numer * y.numer, x.denom * y.denom)
 
 
 class ComplexRI(object):
@@ -45,6 +58,16 @@ class ComplexMA(object):
 
     def __repr__(self):
         return 'ComplexMA({0}, {1})'.format(self.magnitude, self.angle)
+
+
+class Rational(object):
+    def __init__(self, numer, denom):
+        g = gcd(numer, denom)
+        self.numer = numer // g
+        self.denom = numer // g
+
+    def __repr__(self):
+        return 'Rational({0}, {1})'.format(self.numer, self.denom)
 
 
 # define operators
