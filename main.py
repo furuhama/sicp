@@ -89,26 +89,26 @@ def main():
     my class modules
     """
 
-    # make class
-    Account = my_class.make_account_class()
-    # make instance
-    furuhama_account = Account['new']('furuhama')
+    # # make class
+    # Account = my_class.make_account_class()
+    # # make instance
+    # furuhama_account = Account['new']('furuhama')
 
-    # show details
-    print(furuhama_account['get']('holder'))
-    print(furuhama_account['get']('interest'))
-    print(furuhama_account['get']('deposit')(20))
-    print(furuhama_account['get']('withdraw')(5))
+    # # show details
+    # print(furuhama_account['get']('holder'))
+    # print(furuhama_account['get']('interest'))
+    # print(furuhama_account['get']('deposit')(20))
+    # print(furuhama_account['get']('withdraw')(5))
 
-    # get unexist variable
-    print(furuhama_account['get']('hoge'))
+    # # get unexist variable
+    # print(furuhama_account['get']('hoge'))
 
-    CheckingAccount = my_class.make_checking_account_class()
-    f_account = CheckingAccount['new']('f')
-    print(f_account['get']('holder'))
-    print(f_account['get']('interest'))
-    print(f_account['get']('deposit')(20))
-    print(f_account['get']('withdraw')(5))
+    # CheckingAccount = my_class.make_checking_account_class()
+    # f_account = CheckingAccount['new']('f')
+    # print(f_account['get']('holder'))
+    # print(f_account['get']('interest'))
+    # print(f_account['get']('deposit')(20))
+    # print(f_account['get']('withdraw')(5))
 
     from math import pi
     print(my_class.add_complex(my_class.ComplexRI(
