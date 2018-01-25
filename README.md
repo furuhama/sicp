@@ -19,3 +19,4 @@ I use Python or Racket as Scheme processing system.
 - P128[2.5.7 The Role of Objects] (2018/01/17)
 - P130[2.6.1 Instances] (2018/01/21)
 - P133[2.6.3 Using Implemented Objects] (2018/01/23)
+- P140[2.7.2 Multiple Representations] (2018/01/25)
