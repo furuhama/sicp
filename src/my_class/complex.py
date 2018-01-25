@@ -45,3 +45,10 @@ class ComplexMA(object):
 
     def __repr__(self):
         return 'ComplexMA({0}, {1})'.format(self.magnitude, self.angle)
+
+
+# define operators
+ComplexRI.__add__ = lambda self, other: add_complex(self, other)
+ComplexMA.__add__ = lambda self, other: add_complex(self, other)
+ComplexRI.__mul__ = lambda self, other: mul_complex(self, other)
+ComplexMA.__mul__ = lambda self, other: mul_complex(self, other)
