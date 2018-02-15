@@ -106,7 +106,7 @@ def main_process():
     # print(my_class.mul_complex(my_class.ComplexRI(0, 1), my_class.ComplexRI(0, 1)))
 
     # define operators
-    print(my_class.ComplexRI(1, 2) + my_class.ComplexMA(2, 0))
-    print(my_class.ComplexRI(0, 1) * my_class.ComplexRI(0, 1))
+    # print(my_class.ComplexRI(1, 2) + my_class.ComplexMA(2, 0))
+    # print(my_class.ComplexRI(0, 1) * my_class.ComplexRI(0, 1))
 
-    print(my_class.iscomplex(my_class.ComplexMA(1, 1)))
+    # print(my_class.iscomplex(my_class.ComplexMA(1, 1)))
