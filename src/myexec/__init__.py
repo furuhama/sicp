@@ -113,3 +113,9 @@ def main_process():
     # print(my_class.iscomplex(my_class.ComplexMA(1, 1)))
 
     print(sicp.counting_change(100))
+
+    norm = sicp.normal_exp(2, 20)
+    itr = sicp.iter_exp(2, 20)
+    fast = sicp.fast_exp(2, 20)
+
+    print(norm, itr, fast)
