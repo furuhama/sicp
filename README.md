@@ -28,4 +28,4 @@ I use Python or Racket as Scheme processing system.
 
 ============== Chapter 2 end ==============
 
--
+- P163[3.2.6 Example: Exponentiation] (2018/02/16)
