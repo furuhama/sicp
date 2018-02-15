@@ -2,6 +2,10 @@
 
 this repository is for [SICP in Python](https://www.gitbook.com/book/wizardforcel/sicp-in-python/details)
 
+original source: Berkeley CS61A [Online Textbook](http://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/)
+
+(Github book PDF ver. is useful but TeX script does not extend in PDF. You should refer original source especially after chapter 3.)
+
 I use Python or Racket as Scheme processing system.
 
 ### Progress
