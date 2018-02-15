@@ -1,5 +1,6 @@
 from .. import my_class
 from .. import my_package
+from .. import sicp
 
 def main_process():
     # create MyMath instance named hoge
@@ -110,3 +111,5 @@ def main_process():
     # print(my_class.ComplexRI(0, 1) * my_class.ComplexRI(0, 1))
 
     # print(my_class.iscomplex(my_class.ComplexMA(1, 1)))
+
+    print(sicp.counting_change(100))
