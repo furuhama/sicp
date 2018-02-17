@@ -134,3 +134,24 @@
 (print (equal? (list 'a 'b) (list 'a 'b))) ; #t
 
 ;; types
+(print (boolean? #f))
+
+(print (integer? 3))
+
+(print (pair? '(a b)))
+
+(print (null? '()))
+
+(print (symbol? 'a))
+
+(print (procedure? +))
+; all evaled to be #t
+
+;; evaluation
+(print (apply cons '(1 2))) ; (1 . 2)
+
+(print (apply + 1 2 '(3 4 5))) ; 15
+
+; In Gauche, the second argument of `eval` is needed
+; which means environment specifier
+(eval '(+ 1 2) (interaction-environment))
