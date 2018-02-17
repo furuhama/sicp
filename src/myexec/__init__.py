@@ -3,116 +3,116 @@ from .. import my_package
 from .. import sicp
 
 def main_process():
-    # create MyMath instance named hoge
-    # hoge = my_package.MyMath()
+    #  create MyMath instance named hoge
+    #  hoge = my_package.MyMath()
 
-    # create Account instance named ac
-    # ac = my_package.Account("spam")
+    #  create Account instance named ac
+    #  ac = my_package.Account("spam")
 
-    # create CheckingAccount instance
-    # chac = my_package.CheckingAccount("foo")
+    #  create CheckingAccount instance
+    #  chac = my_package.CheckingAccount("foo")
 
-    # create CampaignAccount instance
-    # camac = my_package.CampaignAccount("HOGEEEEE")
+    #  create CampaignAccount instance
+    #  camac = my_package.CampaignAccount("HOGEEEEE")
 
     """
     some process written below
     """
 
-    # hoge.sum_cubes(12)
-    # hoge.print_num()
+    #  hoge.sum_cubes(12)
+    #  hoge.print_num()
 
-    # hoge.pi_sum(100000)
-    # hoge.print_num()
+    #  hoge.pi_sum(100000)
+    #  hoge.print_num()
 
-    # hoge.iter_improve(my_package.golden_update, my_package.golden_test)
-    # hoge.print_num()
+    #  hoge.iter_improve(my_package.golden_update, my_package.golden_test)
+    #  hoge.print_num()
 
-    # hoge.square_root(256)
-    # hoge.print_num()
+    #  hoge.square_root(256)
+    #  hoge.print_num()
 
-    # hoge.compose(hoge.square, hoge.successor, 12)
-    # hoge.print_num()
+    #  hoge.compose(hoge.square, hoge.successor, 12)
+    #  hoge.print_num()
 
-    # hoge.fn_square_root(256)
-    # hoge.print_num()
+    #  hoge.fn_square_root(256)
+    #  hoge.print_num()
 
-    # hoge.logarithm(32)
-    # hoge.print_num()
+    #  hoge.logarithm(32)
+    #  hoge.print_num()
 
-    # hoge.triple(2376)
-    # hoge.print_num()
+    #  hoge.triple(2376)
+    #  hoge.print_num()
 
-    # hoge.sum_even_fibs(50)
-    # hoge.print_num()
+    #  hoge.sum_even_fibs(50)
+    #  hoge.print_num()
 
-    # hoge.product_even_fibs(30)
-    # hoge.print_num()
+    #  hoge.product_even_fibs(30)
+    #  hoge.print_num()
 
-    # print(ac.holder)
+    #  print(ac.holder)
 
-    # ac.deposit(100)
-    # print(ac.balance)
-    # ac.withdraw(10)
-    # print(ac.balance)
-    # print(ac.withdraw(150))
-    # print(ac.balance)
+    #  ac.deposit(100)
+    #  print(ac.balance)
+    #  ac.withdraw(10)
+    #  print(ac.balance)
+    #  print(ac.withdraw(150))
+    #  print(ac.balance)
 
-    # print(getattr(ac, 'balance'))
-    # print(hasattr(ac, 'balance'))
+    #  print(getattr(ac, 'balance'))
+    #  print(hasattr(ac, 'balance'))
 
-    # ac.status()
+    #  ac.status()
 
-    # print(ac.interest)
+    #  print(ac.interest)
 
-    # chac.deposit(100)
-    # chac.withdraw(50)
-    # print(chac.balance)
+    #  chac.deposit(100)
+    #  chac.withdraw(50)
+    #  print(chac.balance)
 
-    # print(camac.balance)
-    # camac.deposit(20)
-    # print(camac.balance)
-    # camac.withdraw(10)
-    # print(camac.balance)
+    #  print(camac.balance)
+    #  camac.deposit(20)
+    #  print(camac.balance)
+    #  camac.withdraw(10)
+    #  print(camac.balance)
 
-    # camac.show_inheritance()
+    #  camac.show_inheritance()
 
     """
     my class modules
     """
 
-    # # make class
-    # Account = my_class.make_account_class()
-    # # make instance
-    # furuhama_account = Account['new']('furuhama')
+    #  # make class
+    #  Account = my_class.make_account_class()
+    #  # make instance
+    #  furuhama_account = Account['new']('furuhama')
 
-    # # show details
-    # print(furuhama_account['get']('holder'))
-    # print(furuhama_account['get']('interest'))
-    # print(furuhama_account['get']('deposit')(20))
-    # print(furuhama_account['get']('withdraw')(5))
+    #  # show details
+    #  print(furuhama_account['get']('holder'))
+    #  print(furuhama_account['get']('interest'))
+    #  print(furuhama_account['get']('deposit')(20))
+    #  print(furuhama_account['get']('withdraw')(5))
 
-    # # get unexist variable
-    # print(furuhama_account['get']('hoge'))
+    #  # get unexist variable
+    #  print(furuhama_account['get']('hoge'))
 
-    # CheckingAccount = my_class.make_checking_account_class()
-    # f_account = CheckingAccount['new']('f')
-    # print(f_account['get']('holder'))
-    # print(f_account['get']('interest'))
-    # print(f_account['get']('deposit')(20))
-    # print(f_account['get']('withdraw')(5))
+    #  CheckingAccount = my_class.make_checking_account_class()
+    #  f_account = CheckingAccount['new']('f')
+    #  print(f_account['get']('holder'))
+    #  print(f_account['get']('interest'))
+    #  print(f_account['get']('deposit')(20))
+    #  print(f_account['get']('withdraw')(5))
 
-    # from math import pi
-    # print(my_class.add_complex(my_class.ComplexRI(1, 2), my_class.ComplexMA(2, pi / 2)))
-    # print(my_class.mul_complex(my_class.ComplexRI(0, 1), my_class.ComplexRI(0, 1)))
+    #  from math import pi
+    #  print(my_class.add_complex(my_class.ComplexRI(1, 2), my_class.ComplexMA(2, pi / 2)))
+    #  print(my_class.mul_complex(my_class.ComplexRI(0, 1), my_class.ComplexRI(0, 1)))
 
-    # define operators
-    # print(my_class.ComplexRI(1, 2) + my_class.ComplexMA(2, 0))
-    # print(my_class.ComplexRI(0, 1) * my_class.ComplexRI(0, 1))
+    #  define operators
+    #  print(my_class.ComplexRI(1, 2) + my_class.ComplexMA(2, 0))
+    #  print(my_class.ComplexRI(0, 1) * my_class.ComplexRI(0, 1))
 
-    # print(my_class.iscomplex(my_class.ComplexMA(1, 1)))
+    #  print(my_class.iscomplex(my_class.ComplexMA(1, 1)))
 
-    print(sicp.counting_change(100))
+    #  print(sicp.counting_change(100))
 
     norm = sicp.normal_exp(2, 20)
     itr = sicp.iter_exp(2, 20)
