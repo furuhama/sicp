@@ -64,6 +64,7 @@ def tokenize(line):
 
 def analyze(tokens):
     """ Create a tree of nested lists from a sequence of tokens. """
+    assert_non_empty(tokens)
     token = analyze_token(tokens.pop(0))
     if isinstance(token, (int, float)):
         return token
@@ -86,6 +87,7 @@ def analyze_token(token):
 
 def analyze_operands(tokens):
     """ Read a list of commma-separated operands. """
+    assert_non_empty(tokens)
     operands = []
     while tokens[0] != ')':
         if operands:
@@ -93,6 +95,12 @@ def analyze_operands(tokens):
         operands.append(analyze(tokens))
     tokens.pop(0) # Remove `)`
     return operands
+
+
+def assert_non_empty(tokens):
+    """ Raise an exception if tokens is empty. """
+    if len(tokens) == 0:
+        raise SyntaxError('unexpected end of line')
 
 
 """
