@@ -41,6 +41,10 @@ def filter_rlist(s, fn):
         return Rlist(s.first, rest)
     return rest
 
+"""
+Use Rlist as if it is a Set
+"""
+
 def empty(s):
     return s is Rlist.empty
 
