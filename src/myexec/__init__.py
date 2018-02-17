@@ -162,3 +162,7 @@ def main_process():
 
     #  union_s = sicp.union_set(t, s)
     #  print(union_s)
+
+    #  sicp.basic_error()
+    #  sicp.try_div_zero()
+    #  print(sicp.invert_safe(0))
