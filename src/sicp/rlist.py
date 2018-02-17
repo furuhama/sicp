@@ -22,3 +22,8 @@ class Rlist(object):
         if i == 0:
             return self.first
         return self.rest[i-1]
+
+def extend_rlist(s1, s2):
+    if s1 is Rlist.empty:
+        return s2
+    return Rlist(s1.first, extend_rlist(s1.rest, s2))
