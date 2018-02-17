@@ -169,3 +169,5 @@ def main_process():
 
     e = sicp.Exp('add', [1, 2])
     print(e)
+
+    print(sicp.calc_eval(e))
