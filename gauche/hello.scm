@@ -37,3 +37,22 @@
 (let ((x 2) (y 3)) ; x = 2, y = 3
   (let ((x 7) (z (+ x y))) ; x = 7, y = 3, z = 5
     (print (* z x)))) ;; 35
+
+(define x 3)
+(define y 4)
+(let ((x 5) (y (+ x 1))) (print y)) ; 4
+(let* ((x 5) (y (+ x 1))) (print y)) ; 6
+
+; local recursive definition
+(letrec ((even?
+           (lambda (n)
+             (if (zero? n)
+               #t
+               (odd? (- n 1)))))
+         (odd?
+           (lambda (n)
+             (if (zero? n)
+               #f
+               (even? (- n 1))))))
+  (print (even? 3872))
+  (print (odd? 3265)))
