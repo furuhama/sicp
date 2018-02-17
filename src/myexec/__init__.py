@@ -153,3 +153,6 @@ def main_process():
     s = sicp.Rlist(1, sicp.Rlist(2, sicp.Rlist(3)))
     print(sicp.set_contains(s, 2))
     print(sicp.set_contains(s, 5))
+
+    t = sicp.adjoin_set(s, 4)
+    print(t)

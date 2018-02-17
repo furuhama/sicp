@@ -50,3 +50,8 @@ def set_contains(s, element):
     elif s.first == element:
         return True
     return set_contains(s.rest, element)
+
+def adjoin_set(s, element):
+    if set_contains(s, element):
+        return s
+    return Rlist(element, s)
