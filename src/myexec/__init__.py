@@ -133,5 +133,19 @@ def main_process():
 
     #  print(sicp.filter_rlist(s, lambda x: x % 2 == 1))
 
-    tup = ((1, 2), 3, 4)
-    print(sicp.count_leaves(tup))
+    #  tree = ((1, 2), 3, 4)
+    #  print(sicp.count_leaves(tree))
+
+    #  big_tree = ((tree, tree), 5)
+    #  print(sicp.count_leaves(big_tree))
+
+    #  sq_big_tree = sicp.map_tree(big_tree, sicp.square)
+    #  sq_sq_big_tree = sicp.map_tree(sq_big_tree, sicp.square)
+    #  print(sq_sq_big_tree)
+
+    print(sicp.fib_tree(1))
+    print(sicp.fib_tree(2))
+    print(sicp.fib_tree(3))
+    print(sicp.fib_tree(4))
+    print(sicp.fib_tree(5))
+    print(sicp.fib_tree(6))
