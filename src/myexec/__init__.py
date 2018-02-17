@@ -119,3 +119,9 @@ def main_process():
     fast = sicp.fast_exp(2, 20)
 
     print(norm, itr, fast)
+
+    s = sicp.Rlist(1, sicp.Rlist(2, sicp.Rlist(3)))
+
+    print(s.rest)
+    print(len(s))
+    print(s[1])
