@@ -32,3 +32,9 @@ I use Python or Racket as Scheme processing system.
 - P165[3.3.1 Processing Recursive Lists] (2018/02/17)
 - P173[3.3.3 Sets] (2018/02/17)
 - P186[3.5.2 Parsing] (2018/02/17)
+- P194[3.6.1 The Scheme Language] (2018/02/17)
+- skipped [The Logo Language]
+
+============== Chapter 3 end ==============
+
+-
