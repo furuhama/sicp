@@ -166,3 +166,6 @@ def main_process():
     #  sicp.basic_error()
     #  sicp.try_div_zero()
     #  print(sicp.invert_safe(0))
+
+    e = sicp.Exp('add', [1, 2])
+    print(e)

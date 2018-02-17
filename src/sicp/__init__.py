@@ -5,6 +5,7 @@ sicp directory is for Chapter 3
 from .rlist import *
 from .hierarchical import *
 from .exception import *
+from .calculator import *
 
 def counting_change(a, kinds=(50, 25, 10, 5, 1)):
     if a == 0:
