@@ -37,4 +37,8 @@ I use Python or Racket as Scheme processing system.
 
 ============== Chapter 3 end ==============
 
--
+(just read)
+
+============== Chapter 4 end ==============
+
+- P244[5.2.5 Streams] (2018/02/18)
