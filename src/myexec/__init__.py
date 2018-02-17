@@ -150,15 +150,15 @@ def main_process():
     #  print(sicp.fib_tree(5))
     #  print(sicp.fib_tree(6))
 
-    s = sicp.Rlist(1, sicp.Rlist(2, sicp.Rlist(3)))
-    print(sicp.set_contains(s, 2))
-    print(sicp.set_contains(s, 5))
+    #  s = sicp.Rlist(1, sicp.Rlist(2, sicp.Rlist(3)))
+    #  print(sicp.set_contains(s, 2))
+    #  print(sicp.set_contains(s, 5))
 
-    t = sicp.adjoin_set(s, 4)
-    print(t)
+    #  t = sicp.adjoin_set(s, 4)
+    #  print(t)
 
-    inter_s = sicp.intersect_set(t, sicp.map_rlist(s, sicp.square))
-    print(inter_s)
+    #  inter_s = sicp.intersect_set(t, sicp.map_rlist(s, sicp.square))
+    #  print(inter_s)
 
-    union_s = sicp.union_set(t, s)
-    print(union_s)
+    #  union_s = sicp.union_set(t, s)
+    #  print(union_s)
