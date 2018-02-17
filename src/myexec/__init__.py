@@ -156,3 +156,9 @@ def main_process():
 
     t = sicp.adjoin_set(s, 4)
     print(t)
+
+    inter_s = sicp.intersect_set(t, sicp.map_rlist(s, sicp.square))
+    print(inter_s)
+
+    union_s = sicp.union_set(t, s)
+    print(union_s)
