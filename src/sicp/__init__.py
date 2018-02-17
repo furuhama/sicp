@@ -6,6 +6,7 @@ from .rlist import *
 from .hierarchical import *
 from .exception import *
 from .calculator import *
+from .sequence import *
 
 def counting_change(a, kinds=(50, 25, 10, 5, 1)):
     if a == 0:

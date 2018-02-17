@@ -172,4 +172,22 @@ def main_process():
 
     #  print(sicp.calc_eval(e))
 
-    sicp.read_eval_print_loop()
+    #  sicp.read_eval_print_loop()
+
+    #  sicp.range_print()
+
+    #  letters = sicp.Letters()
+    #  print(letters.__next__())
+    #  print(letters.__next__())
+    #  print(letters.__next__())
+    #  print(letters.__next__())
+    #  print(letters.__next__()) # raise error
+
+    #  sicp.counting()
+    #  sicp.count_by_iter()
+
+    #  sicp.letters_generation()
+
+    #  sicp.generate_all_pairs()
+
+    sicp.using_stream()
