@@ -60,8 +60,20 @@ def adjoin_set(s, element):
         return s
     return Rlist(element, s)
 
+#  not fast ver.
+#  def intersect_set(s1, s2):
+#      return filter_rlist(s1, lambda element: set_contains(s2, element))
+
 def intersect_set(s1, s2):
-    return filter_rlist(s1, lambda element: set_contains(s2, element))
+    if empty(s1) or empty(s2):
+        return Rlist.empty
+    e1, e2 = s1.first, s2.first
+    if e1 == e2:
+        return Rlist(e1, intersect_set(s1.rest, s2.rest))
+    elif e1 < e2:
+        return intersect_set(s1.rest, s2)
+    elif e2 < e1:
+        return intersect_set(s1, s2.rest)
 
 def union_set(s1, s2):
     in_s1_not_in_s2 = filter_rlist(s1, lambda element: not set_contains(s2, element))
