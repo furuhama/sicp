@@ -31,3 +31,4 @@ I use Python or Racket as Scheme processing system.
 - P163[3.2.6 Example: Exponentiation] (2018/02/16)
 - P165[3.3.1 Processing Recursive Lists] (2018/02/17)
 - P173[3.3.3 Sets] (2018/02/17)
+- P186[3.5.2 Parsing] (2018/02/17)
