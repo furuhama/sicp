@@ -56,3 +56,32 @@
                (even? (- n 1))))))
   (print (even? 3872))
   (print (odd? 3265)))
+
+; global definition
+(define (hard-even? x)
+  (define (even? n)
+    (if (zero? n)
+      #t
+      (odd? (- n 1))))
+  (define (odd? n)
+    (if (zero? n)
+      #t
+      (even? (- n 1))))
+  (even? x))
+
+(print (hard-even? 10))
+
+; arithmetic calcilation
+
+(print (- (quotient (* (+ 3 7 10) (- 1000 8)) 992) 17))
+
+(print (remainder 27 4))
+
+(print (not (= 15 14)))
+
+; list
+(print (cons 'a 'b)) ; (a . b)
+
+(print (list 'a 'b )) ; (a b)
+
+(print (cons 'a (cons 'b '()))) ; (a b)
