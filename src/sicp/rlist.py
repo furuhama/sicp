@@ -40,3 +40,13 @@ def filter_rlist(s, fn):
     if fn(s.first):
         return Rlist(s.first, rest)
     return rest
+
+def empty(s):
+    return s is Rlist.empty
+
+def set_contains(s, element):
+    if empty(s):
+        return False
+    elif s.first == element:
+        return True
+    return set_contains(s.rest, element)
