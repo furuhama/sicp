@@ -114,21 +114,24 @@ def main_process():
 
     #  print(sicp.counting_change(100))
 
-    norm = sicp.normal_exp(2, 20)
-    itr = sicp.iter_exp(2, 20)
-    fast = sicp.fast_exp(2, 20)
+    #  norm = sicp.normal_exp(2, 20)
+    #  itr = sicp.iter_exp(2, 20)
+    #  fast = sicp.fast_exp(2, 20)
 
-    print(norm, itr, fast)
+    #  print(norm, itr, fast)
 
-    s = sicp.Rlist(1, sicp.Rlist(2, sicp.Rlist(3)))
+    #  s = sicp.Rlist(1, sicp.Rlist(2, sicp.Rlist(3)))
 
-    print(s.rest)
-    print(len(s))
-    print(s[1])
+    #  print(s.rest)
+    #  print(len(s))
+    #  print(s[1])
 
-    t = sicp.extend_rlist(s.rest, s)
-    print(t)
+    #  t = sicp.extend_rlist(s.rest, s)
+    #  print(t)
 
-    print(sicp.map_rlist(s, sicp.square))
+    #  print(sicp.map_rlist(s, sicp.square))
 
-    print(sicp.filter_rlist(s, lambda x: x % 2 == 1))
+    #  print(sicp.filter_rlist(s, lambda x: x % 2 == 1))
+
+    tup = ((1, 2), 3, 4)
+    print(sicp.count_leaves(tup))
