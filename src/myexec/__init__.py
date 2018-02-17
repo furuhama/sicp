@@ -125,3 +125,10 @@ def main_process():
     print(s.rest)
     print(len(s))
     print(s[1])
+
+    t = sicp.extend_rlist(s.rest, s)
+    print(t)
+
+    print(sicp.map_rlist(s, sicp.square))
+
+    print(sicp.filter_rlist(s, lambda x: x % 2 == 1))

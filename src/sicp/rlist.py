@@ -27,3 +27,16 @@ def extend_rlist(s1, s2):
     if s1 is Rlist.empty:
         return s2
     return Rlist(s1.first, extend_rlist(s1.rest, s2))
+
+def map_rlist(s, fn):
+    if s is Rlist.empty:
+        return s
+    return Rlist(fn(s.first), map_rlist(s.rest, fn))
+
+def filter_rlist(s, fn):
+    if s is Rlist.empty:
+        return s
+    rest = filter_rlist(s.rest, fn)
+    if fn(s.first):
+        return Rlist(s.first, rest)
+    return rest
