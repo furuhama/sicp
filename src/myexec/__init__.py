@@ -167,7 +167,9 @@ def main_process():
     #  sicp.try_div_zero()
     #  print(sicp.invert_safe(0))
 
-    e = sicp.Exp('add', [1, 2])
-    print(e)
+    #  e = sicp.Exp('add', [1, 2])
+    #  print(e)
 
-    print(sicp.calc_eval(e))
+    #  print(sicp.calc_eval(e))
+
+    sicp.read_eval_print_loop()
