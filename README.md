@@ -47,4 +47,5 @@ I use Python or Gauche (first I used Racket, but I changed to Gauche scheme proc
 
 ============== Chapter 5 end ==============
 
-========== All chpters are done! ==========
+
+All chpters are done! (2018/02/18)
