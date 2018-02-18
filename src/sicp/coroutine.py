@@ -39,6 +39,16 @@ def using_coroutine():
     read(text, matcher)
 
 
+    # count letters
+    s = sum_dicts()
+    s.__next__()
+
+    c = count_letters(s)
+    c.__next__()
+
+    read(text, c)
+
+
 def match(pattern):
     print('Looking for ' + pattern)
     try:
@@ -67,6 +77,7 @@ def match_filter(pattern, next_coroutine):
         next_coroutine.close()
 
 
+# just print what itertor gives to this function
 def print_consumer():
     print('Preparing to print')
     try:
@@ -75,3 +86,26 @@ def print_consumer():
             print(line)
     except GeneratorExit:
         print('=== Done ===')
+
+
+def count_letters(next_coroutine):
+    try:
+        while True:
+            s = (yield)
+            counts = { letter: s.count(letter) for letter in set(s) }
+            next_coroutine.send(counts)
+    except GeneratorExit:
+        next_coroutine.close()
+
+
+def sum_dicts():
+    total = {}
+    try:
+        while True:
+            counts = (yield)
+            for letter, count in counts.items():
+                # add `counts` letter count & `total` memorized letter count
+                total[letter] = count + total.get(letter, 0)
+    except GeneratorExit:
+        max_letter = max(total.items(), key=lambda t: t[1])[0]
+        print('Most frequent letter: ' + max_letter)
