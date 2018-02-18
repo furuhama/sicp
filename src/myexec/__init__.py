@@ -190,4 +190,6 @@ def main_process():
 
     #  sicp.generate_all_pairs()
 
-    sicp.using_stream()
+    #  sicp.using_stream()
+
+    sicp.using_coroutine()
