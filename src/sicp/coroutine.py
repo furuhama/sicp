@@ -49,6 +49,17 @@ def using_coroutine():
     read(text, c)
 
 
+    # multitasking
+    m = match('mend')
+    m.__next__()
+
+    p = match('pend')
+    p.__next__()
+
+    # run m & p coroutines
+    read_to_many(text, [m, p])
+
+
 def match(pattern):
     print('Looking for ' + pattern)
     try:
@@ -109,3 +120,13 @@ def sum_dicts():
     except GeneratorExit:
         max_letter = max(total.items(), key=lambda t: t[1])[0]
         print('Most frequent letter: ' + max_letter)
+
+
+def read_to_many(text, coroutines):
+    for word in text.split():
+        # run each coroutine for each word
+        for coroutine in coroutines:
+            coroutine.send(word)
+    # close every coroutine
+    for coroutine in coroutines:
+        coroutine.close()
