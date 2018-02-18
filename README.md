@@ -6,7 +6,7 @@ original source: Berkeley CS61A [Online Textbook](http://www-inst.eecs.berkeley.
 
 (Github book PDF ver. is useful but TeX script does not extend in PDF. You should refer original source especially after chapter 3.)
 
-I use Python or Racket as Scheme processing system.
+I use Python or Gauche (first I used Racket, but I changed to Gauche scheme processer) as Scheme processing system.
 
 ### Progress
 
@@ -42,3 +42,9 @@ I use Python or Racket as Scheme processing system.
 ============== Chapter 4 end ==============
 
 - P244[5.2.5 Streams] (2018/02/18)
+- P251[5.3.3 Multitasking] (2018/02/18)
+
+
+============== Chapter 5 end ==============
+
+========== All chpters are done! ==========
