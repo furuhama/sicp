@@ -1,6 +1,6 @@
-## Read SICP
+## Read SICP in Python
 
-this repository is for [SICP in Python](https://www.gitbook.com/book/wizardforcel/sicp-in-python/details)
+this repository's `sicp_in_python` directory is for [SICP in Python](https://www.gitbook.com/book/wizardforcel/sicp-in-python/details)
 
 original source: Berkeley CS61A [Online Textbook](http://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/)
 
@@ -8,7 +8,7 @@ original source: Berkeley CS61A [Online Textbook](http://www-inst.eecs.berkeley.
 
 I use Python or Gauche (first I used Racket, but I changed to Gauche scheme processer) as Scheme processing system.
 
-### Progress
+### SICP in Python Progress
 
 - P49 (2018/01/07)
 - P53[1.6.3 Defining Functions III: Nested Difinitions (2018/01/13)
@@ -47,3 +47,7 @@ I use Python or Gauche (first I used Racket, but I changed to Gauche scheme proc
 ============== Chapter 5 end ==============
 
 All chpters are done! (2018/02/18)
+
+## Read original SICP
+
+`sicp` directory is for original SICP
