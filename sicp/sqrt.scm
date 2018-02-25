@@ -1,4 +1,5 @@
 ;; define sqrt function
+
 (define (sqrt x)
   (define (sqrt-iter guess x)
     (define (good-enough? guess x)
