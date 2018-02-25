@@ -44,8 +44,6 @@ I use Python or Gauche (first I used Racket, but I changed to Gauche scheme proc
 - P244[5.2.5 Streams] (2018/02/18)
 - P251[5.3.3 Multitasking] (2018/02/18)
 
-
 ============== Chapter 5 end ==============
-
 
 All chpters are done! (2018/02/18)
