@@ -1,3 +1,5 @@
+# SICP and SICP in Python
+
 ## Read SICP in Python
 
 this repository's `sicp_in_python` directory is for [SICP in Python](https://www.gitbook.com/book/wizardforcel/sicp-in-python/details)
