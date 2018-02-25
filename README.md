@@ -50,4 +50,6 @@ All chpters are done! (2018/02/18)
 
 ## Read original SICP
 
-`sicp` directory is for original SICP
+`sicp` directory is for original [SICP](https://mitpress.mit.edu/sicp/full-text/book/book.html)
+
+And I read Japanese translated version [SICP](http://vocrf.net/docs_ja/jsicp.pdf)
