@@ -13,9 +13,14 @@
       (< (abs (- ((lambda (x) (* x x)) guess) x)) 0.001))
 
     (define (improve guess x)
-      (define (average x y)
-        (/ (+ x y) 2))
-      (average guess (/ x guess)))
+      ;; normal implementation
+
+      ; (define (average x y)
+      ;   (/ (+ x y) 2))
+      ; (average guess (/ x guess)))
+
+      ;; use lambda
+      ((lambda (x y) (/ (+ x y) 2)) guess (/ x guess)))
     (if (good-enough? guess x)
       guess
       (sqrt-iter (improve guess x) x)))
