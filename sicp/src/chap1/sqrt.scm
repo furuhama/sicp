@@ -3,9 +3,15 @@
 (define (sqrt x)
   (define (sqrt-iter guess x)
     (define (good-enough? guess x)
-      (define (square x)
-        (* x x))
-      (< (abs (- (square guess) x)) 0.001))
+      ;; normal implementation
+
+      ; (define (square x)
+      ;   (* x x))
+      ; (< (abs (- (square guess) x)) 0.001))
+
+      ;; use lambda
+      (< (abs (- ((lambda (x) (* x x)) guess) x)) 0.001))
+
     (define (improve guess x)
       (define (average x y)
         (/ (+ x y) 2))
